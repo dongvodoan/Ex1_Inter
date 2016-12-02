@@ -25,6 +25,8 @@ $(document).ready(function(){
 	 		},
 	 		yearold: {
 	 			required: true,
+	 			number: true,
+	 			digits: true,
 	 			min: 15,
 	 			max: 150
 	 		},
@@ -34,7 +36,7 @@ $(document).ready(function(){
 	 		},
 	 		phonenumber: {
 	 			required: true,
-	 			pattern: /^(0|\+84)[0-9]{10}$/
+	 			pattern: /^(0|\+84)(\d{2}|\d{3})\d{7}$/
 	 		}
 	 	},
 		messages: {
@@ -48,8 +50,10 @@ $(document).ready(function(){
 		 	},
 		 	yearold: {
 		 		required: "Vui lòng nhập yearold",
-		 		min: "Dưới tuổi cho phép",
-		 		max: "Vượt quá tuổi cho phép"
+		 		number: "Chỉ được nhập số",
+		 		digits: "Không được nhập số thập phân",
+		 		min: "Dưới tuổi cho phép. Tuổi thấp nhất: 15",
+		 		max: "Vượt quá tuổi cho phép. Tuổi tối đa cho phép: 150"
 		 	},
 		 	startdate: {
 		 		required: "Vui lòng nhập startdate",
@@ -73,17 +77,14 @@ $(document).ready(function(){
 	});
 
 	$("input[type=radio]").change(function(){
-		var gender = " ";
-    	$("input[type=radio]:checked").each(function(){
-    		gender += $(this).val();
-       	});
+		var gender = $(this).parent().text();
     	$("#gender").text(gender);
-    }).change();
+    });
 
     $("select").change(function(){
-    	var nationality = " ";
+    	var nationality = " " ;
     	$("select option:selected").each(function(){
-    		nationality += $(this).val();
+    		nationality += $(this).text();
        	});
     	$("#nationality").text(nationality);
     }).change();

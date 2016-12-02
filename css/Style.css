@@ -1,0 +1,158 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#menu {
+		width: 100%;
+		float: left;
+		background-color: #3a4f63;
+		padding: 5px 0px 10px 5px;
+	}
+#menu>ul {
+    	list-style-type: none;
+    	width: 900px;
+	}
+#menu ul li {
+		float: left;
+		position: relative;
+		text-align: justify;
+		white-space: nowrap;	
+		z-index: 1;
+	}
+#menu ul li a {
+		color: #dde4ec;
+		display: block;
+		text-decoration: none;
+    	background-color: #465c71;
+		border: 1px solid #4e667d;
+		padding: 4px 20px;
+}
+#menu ul li a:hover {
+		background: #bfcbd6;
+		color: #465c71;
+}
+#menu ul li > ul {
+		display: none;
+		position: absolute;
+		list-style-type: none;
+		top:100%;
+		left: 0px;
+}
+#menu ul li >ul li {
+		width: 100%;
+}
+#menu ul li:hover >ul {
+		display: list-item;	
+		text-align: justify;
+}
+
+/* Interface 2*/
+#table_infor {
+	border: 1px solid black;
+	width: 99%;
+	border-collapse: collapse;
+	margin-top: 50px;
+	margin-left: 5px;
+}
+#table_infor th {
+	text-align: left;
+	background-color: #8c8c8c;
+	border-bottom: 1px solid white;
+	border-right: 1px solid black;
+}
+#table_infor tr:nth-child(even) {
+	background-color:  #f2f2f2
+
+}
+#table_infor th {
+	border-left: 1px solid black;
+	padding: 5px;
+}
+#table_infor td {
+	border-left: 1px solid black;
+	padding: 5px;
+}
+button {
+	padding: 3px 10px 3px 10px;
+	text-align: center;
+	box-shadow: 5px 5px 10px 0px black;
+}
+.action {
+	text-align: center;
+}
+
+/*Form 1*/
+#form {
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 500px;
+}
+#input_form {
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+.title{
+	line-height: 50px;
+}
+.input {
+	width: 340px;
+	height: 20px;
+	margin-left: 40px;
+	margin-top: 0px;
+}
+#submit {
+	float: right;
+	margin-top: 5px;
+	padding: 5px 10px 5px 10px;
+	box-shadow: 5px 5px 10px 0px black;
+}
+#datepicker {
+	width: 150px;
+	height: 20px;
+	margin-left: 40px;
+	margin-right: 0px;
+}
+label.error {
+ 	color:red;
+ 	display: block;
+ 	margin-left: 40px;
+}
+
+/*Form 2*/
+#form2 {
+	width: 450px;
+	margin-top: 50px;
+	margin-left: 100px;
+	line-height: 30px;
+}
+#form_table {
+	margin: 10px;
+	line-height: 40px;
+}
+.form2_input {
+	margin-left: 50px;
+	width: 350px;
+	padding: 5px;
+}
+.display_change {
+	margin-left:50px;
+}
+select {
+	margin-left:50px; 
+	padding: 5px; 
+	width: 120px;
+}
+#display_block {
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+#display_table {
+	margin-left: 10px;
+}
+#select_gender {
+	width: 190px;
+}
+#select_gender >input{
+	margin-left: 50px;
+}

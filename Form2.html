@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interface 5</title>
+	<meta charset="utf-8">
+	<meta name="description" content="interface 5">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div id="form2">
+	<form action="#">
+		 <fieldset>
+		    <legend>Form</legend>
+		    	<table id="form_table">
+		    		<tr>
+		    			<td><label>First name</label></td>
+				    	<td colspan="2"><input  class="form2_input" id="firstname" type="text" name="firstname" placeholder="first name"></td>
+		    		</tr>
+		    		<tr>
+		    			<td><label>Last name</label></td>
+		    			<td colspan="2"><input class="form2_input" id="lastname" type="text" name="lastname" placeholder="last name"></td>
+		    		</tr>
+				    <tr>
+				    	<td><label>Sex</label></td>
+				    	<td id="select_gender"><input type="radio"  name="gender" value="Male" checked="checked"> Male<br></td>
+				    	<td><input type="radio"  name="gender" value="Female"> Female<br></td>
+				    </tr>
+				   	<tr>
+				   		<td><label>Nationality</label></td>
+				   		<td>
+				   			<select >
+				    			<option value="Australia" selected="selected">Australia</option>
+				    			<option value="Singapore">Singapore</option>
+				    			<option value="United State">United State</option>
+				    			<option value="Viet Nam">Viet Nam</option>
+				    		</select>
+				    	</td>
+				   	</tr>
+				</table>
+				<div id="display_block">
+					<table id="display_table">
+						<tr>
+					   		<td>Fullname</td>
+					   		<td><p id="fullname" class="display_change"></p></td>
+					   	</tr>
+					   	<tr>
+					   		<td>Sex</td>
+					   		<td><p id="gender" class="display_change"></p></td>
+					   	</tr>
+					   	<tr>
+					   		<td>Nationality</td>
+					   		<td><p id="nationality" class="display_change"></p></td>
+					   	</tr>
+					</table>
+				</div>
+			</fieldset>
+	</form>
+</div>
+</body>
+</html>
